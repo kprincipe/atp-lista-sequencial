@@ -12,21 +12,26 @@ int main(void) {
     printf("Insira primeira nota: ");
     if (scanf("%f", &nota1) != 1) {
         fprintf(stderr, "Erro: entrada deve ser um numero\n");
+        return 1;
     }
     printf("    Peso: ");
     if (scanf("%f", &peso1) != 1) {
         fprintf(stderr, "Erro: entrada deve ser um numero\n");
+        return 1;
     }
     
     printf("Insira segunda nota: ");
     if (scanf("%f", &nota2) != 1) {
         fprintf(stderr, "Erro: entrada deve ser um numero\n");
+        return 1;
     }
     printf("    Peso: ");
     if (scanf("%f", &peso2) != 1) {
         fprintf(stderr, "Erro: entrada deve ser um numero\n");
+        return 1;
     }
 
     nota_final = calcular_media_pesos(nota1, peso1, nota2, peso2);
     printf("Nota final = %f\n", nota_final);
+    return 0;
 }
