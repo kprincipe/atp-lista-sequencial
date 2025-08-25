@@ -1,22 +1,41 @@
 #include <stdio.h>
 
 int main(void) {
-    char nome1[256];
-    char nome2[256];
-    char nome3[256];
+    char nome1[64], meio1[64], sobrenome1[64];
+    char nome2[64], meio2[64], sobrenome2[64];
+    char nome3[64], meio3[64], sobrenome3[64];
 
     printf("Escreva o primeiro nome: ");
-    fgets(nome1, 256, stdin);
-
-    printf("Escreva o segundo nome : ");
-    fgets(nome2, 256, stdin);
-
-    printf("Escreva o terceiro nome : ");
-    fgets(nome3, 256, stdin);
+    scanf("%s", nome1);
+    printf("        Nome do meio: ");
+    scanf("%s", meio1);
+    printf("        Sobrenome   : ");
+    scanf("%s", sobrenome1);
 
     printf("\n");
-    printf(": %s", nome1);
-    printf(": %s", nome2);
-    printf(": %s", nome3);
+
+    printf("Escreva o primeiro nome: ");
+    scanf("%s", nome2);
+    printf("        Nome do meio: ");
+    scanf("%s", meio2);
+    printf("        Sobrenome   : ");
+    scanf("%s", sobrenome2);
+
+    printf("\n");
+
+    printf("Escreva o primeiro nome: ");
+    scanf("%s", nome3);
+    printf("        Nome do meio: ");
+    scanf("%s", meio3);
+    printf("        Sobrenome   : ");
+    scanf("%s", sobrenome3);
+    
+    printf("\n");
+
+    printf("--------------------------------\n");
+    printf("%s %s\n", nome1, sobrenome1);
+    printf("%s %s\n", nome2, sobrenome2);
+    printf("%s %s\n", nome3, sobrenome3);
+    printf("--------------------------------\n");    
     return 0;
 }
