@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void) {
     // declaracao de variaveis
-    int base, expoente;
+    int base, expoente, potencia;
 
     // entrada dos dados
     printf("Insira a base: ");
@@ -12,9 +13,6 @@ int main(void) {
     scanf("%d", &expoente);
 
     // processamento dos dados
-    int pow(int p, int e) {
-        return e <= 0 ? 1 : p * pow(p, e - 1);
-    }
     potencia = pow(base, expoente);
 
     // saida da informacao processada

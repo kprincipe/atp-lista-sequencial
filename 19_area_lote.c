@@ -16,7 +16,7 @@ int main(void) {
 
     // saida de dados
     printf("\n");
-    printf("Area total: %f m2\n", area_total);
+    printf("Area total: %.2f m2\n", area_total);
     
     return 0;
 }

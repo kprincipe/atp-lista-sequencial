@@ -16,7 +16,7 @@ int main(void) {
 
     // saida de dados processados
     printf("\n");
-    printf("Voce ganha %f salarios minimos\n", qtd_salarios_minimos);
+    printf("Voce ganha %.2f salarios minimos\n", qtd_salarios_minimos);
     
     return 0;
 }

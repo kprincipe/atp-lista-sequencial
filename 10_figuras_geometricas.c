@@ -33,7 +33,7 @@ int main(void) {
     printf("Raio do circulo: ");
     scanf("%f", &cir_raio);
 
-    printf("Area do circulo: %.2f\n", (PI * cir_raio) * (PI * cir_raio));
+    printf("Area do circulo: %.2f\n", PI * (cir_raio * cir_raio));
     printf("--------------------------------\n");
     
     printf("Base maior do trapezio: ");

@@ -11,7 +11,7 @@ int main(void) {
     scanf("%f", &salario_minimo);
     
     printf("Gasto de energia na residência (quilowatts): ");
-    scanf("%f", &quilowatts)
+    scanf("%f", &quilowatts);
 
     // processamento dos dados
     valor_quilowatt = 0.2 * salario_minimo;          // (1/5) do salario minimo
@@ -22,7 +22,7 @@ int main(void) {
     printf("\n");
     printf("Valor de 1kW: %.2f\n", valor_quilowatt);
     printf("Valor a ser pago: %.2f\n", valor_quilowatt * quilowatts);
-    printf("Valor com desconto (5%): %.2f\n", valor_com_desconto);
+    printf("Valor com desconto (5%%): %.2f\n", valor_com_desconto);
     
     return 0;
 }
