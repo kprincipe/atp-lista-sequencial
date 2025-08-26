@@ -1,14 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-    float x, y;
+    // declaracao de variaveis
+    float x, y, diferenca = 0;
 
+    // entrada de dados
     printf("Primeiro numero: ");
     scanf("%f", &x);
     
     printf("Segundo numero: ");
     scanf("%f", &y);
-    
-    printf("Subtracao dos numeros igual a %f\n", x - y);
+
+    // processamento de dados inseridos
+    diferenca = x - y;
+
+    // saida de dados processados
+    printf("Subtracao dos numeros igual a %f\n", diferenca);
     return 0;
 }

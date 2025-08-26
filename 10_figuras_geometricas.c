@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 int main(void) {
+    // declaracao de variaveis
     float tri_base, tri_altura;
     float ret_base, ret_altura;
     float cir_raio;
     float tra_base1, tra_base2, tra_altura;
     float los_diagonal1, los_diagonal2;
-    
+
+    // declaracao de constante
     const float PI = 3.14;
 
+    // entrada e saida de dados
     printf("Base do triangulo: ");
     scanf("%f", &tri_base);
 

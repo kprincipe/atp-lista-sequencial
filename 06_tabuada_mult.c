@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
+    // declaracao de variavel
     int valor = 0;
 
+    // entrada de dados
     printf("Insira numero de 1 a 10: ");
     scanf("%d", &valor);
 
+    // processamento e saida de dados
     printf("1 x %d = %d\n", valor, 1 * valor);
     printf("2 x %d = %d\n", valor, 2 * valor);
     printf("3 x %d = %d\n", valor, 3 * valor);
