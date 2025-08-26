@@ -15,8 +15,8 @@ int main(void) {
     // processamento de dados inseridos
     valor_promocional = valor_diaria * 0.75;
     arrecadacao = valor_promocional * apartamentos;
-
-    // saida de dados processados
+    
+    // processamento/saida de dados processados
     printf("\n");
     printf("--------------------------------------------------\n");
     printf("Valor promocional........................ %.2f\n", valor_promocional);
