@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 int main(void) {
-    float base, expoente;
-    float potencia = 1;
+    // declaracao de variaveis
+    int base, expoente;
 
+    // entrada dos dados
     printf("Insira a base: ");
-    if (scanf("%f", &base) != 1) {
-        fprintf(stderr, "Erro: entrada deve ser numerica\n");
-    }
+    scanf("%d", &base);
     
     printf("Insira o expoente: ");
-    if (scanf("%f", &expoente) != 1) {
-        fprintf(stderr, "Erro: entrada deve ser numerica\n");
+    scanf("%d", &expoente);
+
+    // processamento dos dados
+    int pow(int p, int e) {
+        return e <= 0 ? 1 : p * pow(p, e - 1);
     }
+    potencia = pow(base, expoente);
 
-    for (int i = 0; i < expoente; ++i) potencia *= base;
-
-    printf("Potencia: %f\n", potencia);
+    // saida da informacao processada
+    printf("Potencia: %d\n", potencia);
     return 0;
 }

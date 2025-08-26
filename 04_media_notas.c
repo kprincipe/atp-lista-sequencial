@@ -1,29 +1,24 @@
 #include <stdio.h>
 
-#define QTD_NOTAS 3
-
-float media_aritm_notas(float *notas, unsigned int qtd_notas) {
-    float media = 0;
-    for (int i = 0; i < QTD_NOTAS; ++i) {
-        media += notas[i];
-    }
-    media /= QTD_NOTAS;
-    return media;
-}
-
 int main(void) {
-    float notas[QTD_NOTAS] = {0};
+    // declaracao de variaveis para notas e nota final
+    float nota1, nota2, nota3, nota_final = 0;
 
-    for (int i = 0; i < QTD_NOTAS; ++i) {
-        printf("Nota %d: ", i + 1);
-        if (scanf("%f", &notas[i]) != 1) {
-            printf("Erro: entrada deve ser um numero\n");
-            return 1;
-        }
-    }
+    // entrada de dados das notas
+    printf("Digite nota 1: ");
+    scanf("%f", &nota1);
     
-    float nota_final = media_aritm_notas(notas, QTD_NOTAS);
+    printf("Digite nota 2: ");
+    scanf("%f", &nota2);
+    
+    printf("Digite nota 3: ");
+    scanf("%f", &nota3);
 
-    printf("Nota final: %f\n", nota_final);
+    // calculo da media aritmetica
+    nota_final = (nota1 + nota2 + nota3)/3;
+
+    printf("\n");
+
+    printf("Nota final: %.2f\n", nota_final);
     return 0;
 }

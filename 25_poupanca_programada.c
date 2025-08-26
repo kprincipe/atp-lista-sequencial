@@ -1,17 +1,12 @@
 #include <stdio.h>
-
-float potencia(float a, int n) {
-    float p = 1;
-    for (int i = 0; i < n; ++i)
-        p *= a;
-    
-    return p;
-}
+#include <math.h>
 
 int main(void) {
+    // declaracao de variaveis
     float valor_constante, taxa, meses;
     float rendimento = 0;
 
+    // entrada de dados
     printf("Digite o valor: ");
     scanf("%f", &valor_constante);
     
@@ -20,9 +15,11 @@ int main(void) {
 
     printf("Digite o tempo (meses): ");
     scanf("%f", &meses);
-
-    rendimento = (valor_constante * potencia((1 + taxa), meses)) / taxa;
     
+    // processamento dos dados
+    rendimento = ((valor_constante * pow(1 + taxa, meses)) - 1) / taxa;
+
+    // saida dos dados processados
     printf("\n");
     printf("Rendimento: %.2f\n", rendimento);
     

@@ -1,27 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
+    // declaracao de variaveis
     float salario, salario_minimo, qtd_salarios_minimos;
 
+    // entrada de dados
     printf("Insira seu salario: ");
-    if (scanf("%f", &salario) != 1) {
-        fprintf(stderr, "Erro: entrada deve ser numerica\n");
-        return 1;
-    }
-
+    scanf("%f", &salario);
+    
     printf("Insira o salario minimo vigente: ");
-    if (scanf("%f", &salario_minimo) != 1) {
-        fprintf(stderr, "Erro: entrada deve ser numerica\n");
-        return 1;
-    }
+    scanf("%f", &salario_minimo);
 
-    if (salario_minimo == 0) {
-        fprintf(stderr, "Erro: salario minimo deve ser nao nulo\n");
-        return 1;
-    }
-
+    // processamento dos dados inseridos
     qtd_salarios_minimos = salario / salario_minimo;
 
+    // saida de dados processados
     printf("\n");
     printf("Voce ganha %f salarios minimos\n", qtd_salarios_minimos);
     

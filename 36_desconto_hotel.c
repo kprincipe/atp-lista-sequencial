@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 int main(void) {
+    // declaracao de variaveis
     unsigned int apartamentos;
     float valor_diaria, arrecadacao, valor_promocional = 0;
 
+    // entrada de dados
     printf("Apartamentos disponiveis: ");
     scanf("%d", &apartamentos);
 
     printf("Valor da diaria: ");
     scanf("%f", &valor_diaria);
 
+    // processamento de dados inseridos
     valor_promocional = valor_diaria * 0.75;
-
     arrecadacao = valor_promocional * apartamentos;
-    
+
+    // saida de dados processados
     printf("\n");
     printf("--------------------------------------------------\n");
     printf("Valor promocional........................ %.2f\n", valor_promocional);

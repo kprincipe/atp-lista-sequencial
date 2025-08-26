@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main(void) {
+    // declaracao das variaveis
     float a, b, c, d, e, f;
     float x, y;
 
+    // entrada dos dados
     printf("Coeficiente A: ");
     scanf("%f", &a);
 
@@ -22,6 +24,7 @@ int main(void) {
     printf("Coeficiente F: ");
     scanf("%f", &f);
     
+    // processamento dos dados
     //      af - cd
     // x = ---------
     //      ae - bd
@@ -30,10 +33,11 @@ int main(void) {
     //      ce - bf
     // y = ---------
     //      ae - bd
-
+    
     x = ((c * e) - (b * f)) / ((a * e) - (b * d));
     y = ((a * f) - (c * d)) / ((a * e) - (b * d));
 
+    // saida dos dados processados
     printf("\n");
     printf("------------------------\n");
     printf("    x = %.2f\n", x);
