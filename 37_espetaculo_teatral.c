@@ -3,6 +3,7 @@
 int main(void) {
     // declaracao de variaveis
     float custo_espetaculo, valor_convite, lucro;
+    float minimo_convites;
 
     // entrada de dados
     printf("Custo do espetaculo: ");
@@ -13,10 +14,11 @@ int main(void) {
 
     // processamento de dados inseridos
     lucro = custo_espetaculo * 1.20;
+    minimo_convites = (int) (custo_espetaculo / valor_convite);;
 
     // saida de dados processados
     printf("\n");
-    printf("Minimo de convites para cobrir custo     : %d\n", (int) (custo_espetaculo / valor_convite));
-    printf("Convites vendidos para lucro de 20%%      : %d\n", (int) (lucro / valor_convite));
+    printf("Minimo de convites para cobrir custo     : %.2f\n", minimo_convites);
+    printf("Convites vendidos para lucro de 20%%      : %.2f\n", lucro);
     return 0;
 }
