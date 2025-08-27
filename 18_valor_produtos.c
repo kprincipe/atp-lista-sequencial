@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int receber_numero(float *valor) {
-    if (scanf("%f", valor) != 1) {
-        fprintf(stderr, "Erro: entrada deve ser numerica\n");
-        exit(1);
-    }
-    return *valor;
-}
-
 int main(void) {
     // declaracao de variaveis
     float quantidade1, valor1;

@@ -3,8 +3,8 @@
 int main(void) {
     // declaracao de variaveis
     float peso_quilo;
-    unsigned int peso_grama;
-    unsigned int novo_peso;
+    float peso_grama;
+    float novo_peso;
 
     // entrada de dados
     printf("Digite o seu peso (kg): ");
@@ -16,8 +16,8 @@ int main(void) {
 
     // saida de dados processados
     printf("\n");
-    printf("Peso em gramas: %d\n", peso_grama);
-    printf("Novo peso (+5%% do peso): %d\n", novo_peso); // adiciona 5% sobre o valor do peso
+    printf("Peso em gramas: %.2fg\n", peso_grama);
+    printf("Novo peso (+5%% do peso): %.2fg\n", novo_peso); // adiciona 5% sobre o valor do peso
     
     return 0;
 }

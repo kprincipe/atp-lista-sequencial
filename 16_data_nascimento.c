@@ -7,10 +7,10 @@ int main(void) {
     int idade = 0, idade_semanas = 0;
 
     // entrada de dados do usuario
-    printf("Digite o dia de nascimento: ");
+    printf("Digite o dia de nascimento (Ex. 26): ");
     scanf("%d", &dia);
     
-    printf("Digite o mes de nascimento: ");
+    printf("Digite o mes de nascimento (Ex. 05): ");
     scanf("%d", &mes);
 
     printf("Digite o ano de nascimento (Ex. 2002): ");
