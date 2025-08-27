@@ -10,9 +10,9 @@ int main(void) {
     scanf("%f", &valor_produto);
 
     // processamento de dados
-    valor_desconto = ((100 - DESCONTO)/100) * valor_produto;
+    valor_desconto = 0.91 * valor_produto;
 
     // saida de dados
     printf("\n");
-    printf("Valor com desconto (%d%%): %.2f reais\n", (int) DESCONTO, valor_desconto);
+    printf("Valor com desconto (%.2f%%): %.2f reais\n", DESCONTO, valor_desconto);
 }

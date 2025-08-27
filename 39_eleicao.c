@@ -26,9 +26,9 @@ int main(void) {
 
     // saida de dados processados
     printf("--------------------------------\n");
-    printf("Percentual candidato 1: %.2f%%\n", percentual_cand1);
-    printf("Percentual candidato 2: %.2f%%\n", percentual_cand2);
-    printf("Total de votos nulos  : %.2f%%\n", percentual_nulos);
+    printf("Candidato 1  : %.2f%%\n", percentual_cand1);
+    printf("Candidato 2  : %.2f%%\n", percentual_cand2);
+    printf("Votos nulos  : %.2f%%\n", percentual_nulos);
     printf("--------------------------------\n");
 
     // saida de dados processados

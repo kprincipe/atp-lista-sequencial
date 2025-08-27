@@ -9,7 +9,7 @@ int main(void) {
     scanf("%f", &salario);
 
     // processamento de dados inseridos
-    salario += 0.37 * salario;
+    salario = 1.37 * salario;
 
     // saida de dados processados
     printf("\n");

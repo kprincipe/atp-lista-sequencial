@@ -3,14 +3,18 @@
 
 int main(void) {
     // declaracao de variavel
-    int x = 0;
+    double x = 0, raiz, quadrado;
 
     // entrada de dados
     printf("Insira um numero: ");
-    scanf("%d", &x);
+    scanf("%lf", &x);
+
+    // processamento
+    raiz = sqrt(x);
+    quadrado = x * x;
 
     // saida de informacao
     printf("\n");
-    printf("Raiz quadrada      : %.2f\n", (double) sqrt(x));
-    printf("Quadrado do numero : %d\n", x * x);
+    printf("Raiz quadrada      : %.2f\n", raiz);
+    printf("Quadrado do numero : %.2f\n", quadrado);
 }

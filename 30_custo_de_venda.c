@@ -13,7 +13,8 @@ int main(void) {
     scanf("%f", &acrescimo);
 
     // processamento dos dados inseridos
-    valor_venda = (1 + (acrescimo/100)) * preco_custo;
+    acrescimo /= 100;
+    valor_venda = (1 + acrescimo) * preco_custo;
 
     // saida de dados processados
     printf("\n");

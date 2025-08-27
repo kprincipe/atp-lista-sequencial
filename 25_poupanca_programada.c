@@ -15,9 +15,10 @@ int main(void) {
 
     printf("Digite o tempo (meses): ");
     scanf("%f", &meses);
-    
+
     // processamento dos dados
-    rendimento = ((valor_constante * pow(1 + taxa, meses)) - 1) / taxa;
+    taxa /= 100;
+    rendimento = valor_constante * pow(1 + taxa, meses) - 1 / taxa;
 
     // saida dos dados processados
     printf("\n");
